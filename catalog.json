@@ -1,0 +1,457 @@
+{
+  "version": 1,
+  "title": "MVT25 · СРС",
+  "updatedAt": "2026-11-09T03:25:10.992031+00:00",
+  "subjects": [
+    {
+      "id": "origin-subject-1",
+      "name": "Параллельные вычисления",
+      "color": "#6b8c7e",
+      "semesterId": "origin-semester-1"
+    },
+    {
+      "id": "origin-subject-2",
+      "name": "ДВ. Искусственный интеллект",
+      "color": "#7489ae",
+      "semesterId": "origin-semester-1"
+    },
+    {
+      "id": "origin-subject-3",
+      "name": "Вычислительный практикум",
+      "color": "#ae8367",
+      "semesterId": "origin-semester-1"
+    },
+    {
+      "id": "origin-subject-4",
+      "name": "Математическое моделирование углеводородных месторождений",
+      "color": "#9b7fa6",
+      "semesterId": "origin-semester-1"
+    },
+    {
+      "id": "origin-subject-5",
+      "name": "Современные технологии в науке и образовании",
+      "color": "#b5964f",
+      "semesterId": "origin-semester-1"
+    },
+    {
+      "id": "origin-subject-6",
+      "name": "Методы решения задач прикладной математики",
+      "color": "#648f98",
+      "semesterId": "origin-semester-1"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "origin-assignment-1",
+      "title": "Практическая работа №1. Упорядочивание процессов",
+      "description": "Написать программу с помощью MPI, которая выводит сообщение «Hello World» от каждого процессора. Должны реализовать последовательный вывод сообщений от каждого процессора с помощью MPI_Send и MPI_Recv. Процессоры выводят сообщение по порядку. Если работаете в WSL процессы все равно могут выводиться в неправильном порядке.",
+      "subjectId": "origin-subject-1",
+      "dueDate": null,
+      "attachments": [
+        {
+          "id": "origin-file-5",
+          "name": "Практика1.pdf",
+          "url": "https://storage.yandexcloud.net/student2/mvt25/materials/origin-5.pdf",
+          "size": 107576
+        }
+      ]
+    },
+    {
+      "id": "origin-assignment-2",
+      "title": "Практическая работа №2. Сумма массива",
+      "description": "Реализовать параллельное сложение массива с использованием MPI. Массив генерируется случайными числами от 0 до 20. На ввод подается n – размер массива. MPI_Reduce использовать нельзя.\n\n1. Генерируете массив случайных чисел на нулевом процессоре. \n2. Передаете его поровну всем процессорам с помощью MPI_Scatter. \n3. Далее, выполняете локальные суммы на каждом процессоре. \n4. Отправляете все локальные суммы в нулевой процессор с помощью MPI_Gather и суммируете полученный массив. ",
+      "subjectId": "origin-subject-1",
+      "dueDate": null,
+      "attachments": [
+        {
+          "id": "origin-file-6",
+          "name": "Практика2_паралл.pdf",
+          "url": "https://storage.yandexcloud.net/student2/mvt25/materials/origin-6.pdf",
+          "size": 106517
+        }
+      ]
+    },
+    {
+      "id": "origin-assignment-3",
+      "title": "Задание 1. SubMesh",
+      "description": "Создать область с неоднородностью. Сгенерировать неструктурированную сетку. Отделить данную область от неоднородности с помощью функции Submesh. В результате получится две независимые друг от друга сетки.  (Fenics 2019, Dolfin)",
+      "subjectId": "origin-subject-3",
+      "dueDate": null,
+      "attachments": [
+        {
+          "id": "origin-file-7",
+          "name": "Задание1.pdf",
+          "url": "https://storage.yandexcloud.net/student2/mvt25/materials/origin-7.pdf",
+          "size": 140358
+        },
+        {
+          "id": "origin-file-8",
+          "name": "mesh.geo",
+          "url": "https://storage.yandexcloud.net/student2/mvt25/materials/origin-8.geo",
+          "size": 624
+        },
+        {
+          "id": "origin-file-9",
+          "name": "laba1.py",
+          "url": "https://storage.yandexcloud.net/student2/mvt25/materials/origin-9.py",
+          "size": 547
+        }
+      ]
+    },
+    {
+      "id": "origin-assignment-4",
+      "title": "Задание 2. Метка границ",
+      "description": "Создать неоднородную область, состоящую из двух прямоугольных подобластей. Сгенерировать сетку неструктурированную. Далее разделить сетку на двое в соответствии существующих подобластей. На каждой отдельной подобласти поставить метки внешних границ. Сетку открыть в Paraview и проверить отмечены ли границы.",
+      "subjectId": "origin-subject-3",
+      "dueDate": null,
+      "attachments": [
+        {
+          "id": "origin-file-10",
+          "name": "lr2.py",
+          "url": "https://storage.yandexcloud.net/student2/mvt25/materials/origin-10.py",
+          "size": 2467
+        },
+        {
+          "id": "origin-file-11",
+          "name": "mesh.geo",
+          "url": "https://storage.yandexcloud.net/student2/mvt25/materials/origin-11.geo",
+          "size": 456
+        },
+        {
+          "id": "origin-file-12",
+          "name": "Задание2_выч.pdf",
+          "url": "https://storage.yandexcloud.net/student2/mvt25/materials/origin-12.pdf",
+          "size": 109583
+        }
+      ]
+    },
+    {
+      "id": "origin-assignment-5",
+      "title": "Задание 1. Классификация текста",
+      "description": "1. На основе первого примера создать 4 набора шариков разных цветов другой палитры, которые не пересекаются и распределить их.\n2. Создать базу данных с описанием фильмов и тегами жанров. Используя полиномиальный наивный байесовский классификатор обучить эти данные.",
+      "subjectId": "origin-subject-2",
+      "dueDate": null,
+      "attachments": [
+        {
+          "id": "origin-file-13",
+          "name": "Наивный_Байес.ipynb",
+          "url": "https://storage.yandexcloud.net/student2/mvt25/materials/origin-13.ipynb",
+          "size": 301604
+        },
+        {
+          "id": "origin-file-16",
+          "name": "Наивный_Байес_example.ipynb",
+          "url": "https://storage.yandexcloud.net/student2/mvt25/materials/origin-16.ipynb",
+          "size": 388601
+        }
+      ]
+    },
+    {
+      "id": "origin-assignment-6",
+      "title": "Лаб 1. Уравнение переноса",
+      "description": "Решить уравнение переноса методом характеристик, реализовать программный код Python\n\nhttps://clck.su/XYGEF",
+      "subjectId": "origin-subject-6",
+      "dueDate": null,
+      "attachments": [
+        {
+          "id": "origin-file-14",
+          "name": "Уравнение переноса.jpg",
+          "url": "https://storage.yandexcloud.net/student2/mvt25/materials/origin-14.jpg",
+          "size": 3875747
+        },
+        {
+          "id": "origin-description-link-4be9190f2e94118c",
+          "name": "https://clck.su/XYGEF",
+          "url": "https://clck.su/XYGEF"
+        }
+      ]
+    },
+    {
+      "id": "origin-assignment-7",
+      "title": "Задание 2. Классификация рисунков.",
+      "description": "https://colab.research.google.com/drive/1KV9CAuEy4wD1ayN6qlnEXr9Tmz9UA_kY?usp=sharing\nВыбрать 3 символа/знака, и обучить модель классифицировать рисунки. Для каждого символа/знака сделать минимум 30 образцов",
+      "subjectId": "origin-subject-2",
+      "dueDate": null,
+      "attachments": [
+        {
+          "id": "origin-file-18",
+          "name": "Fashion_MNIST.ipynb",
+          "url": "https://storage.yandexcloud.net/student2/mvt25/materials/origin-18.ipynb",
+          "size": 398794
+        },
+        {
+          "id": "origin-description-link-dc6e75c30fddba73",
+          "name": "https://colab.research.google.com/drive/1KV9CAuEy4wD1ayN6qlnEXr9Tmz9UA_kY?usp=sharing",
+          "url": "https://colab.research.google.com/drive/1KV9CAuEy4wD1ayN6qlnEXr9Tmz9UA_kY?usp=sharing"
+        }
+      ]
+    },
+    {
+      "id": "origin-assignment-8",
+      "title": "Лаб 2. Система уравнений газовой динамики",
+      "description": "Решить систему уравнений газовой динамики на 108 странице",
+      "subjectId": "origin-subject-6",
+      "dueDate": null,
+      "attachments": [
+        {
+          "id": "origin-file-20",
+          "name": "book1992.pdf",
+          "url": "https://storage.yandexcloud.net/student2/mvt25/materials/origin-20.pdf",
+          "size": 18836427
+        },
+        {
+          "id": "origin-file-21",
+          "name": "msedge_ANpHI9DsL0.png",
+          "url": "https://storage.yandexcloud.net/student2/mvt25/materials/origin-21.png",
+          "size": 103511
+        }
+      ]
+    },
+    {
+      "id": "origin-assignment-9",
+      "title": "Задание 3. Метка границ в 3D",
+      "description": "Сделать Задание 2 в трёхмерном пространстве.",
+      "subjectId": "origin-subject-3",
+      "dueDate": null,
+      "attachments": [
+        {
+          "id": "origin-file-22",
+          "name": "Задание3_выч.pdf",
+          "url": "https://storage.yandexcloud.net/student2/mvt25/materials/origin-22.pdf",
+          "size": 85891
+        }
+      ]
+    },
+    {
+      "id": "origin-assignment-10",
+      "title": "Практическая работа №3. Умножение матрицы и вектора",
+      "description": "Реализовать параллельное умножение матрицы размером nxn на вектор размером n помощью MPI. Элементы матрицы и вектора генерируются \nслучайным образом от 0 до 20. В данной задаче удобнее представлять матрицу в виде одномерного массива. Сделать с использованием языка С++. ",
+      "subjectId": "origin-subject-1",
+      "dueDate": null,
+      "attachments": [
+        {
+          "id": "origin-file-23",
+          "name": "Практика3_паралл.pdf",
+          "url": "https://storage.yandexcloud.net/student2/mvt25/materials/origin-23.pdf",
+          "size": 109113
+        }
+      ]
+    },
+    {
+      "id": "origin-assignment-11",
+      "title": "Практическая работа №1. Уравнение фильтрации",
+      "description": "Дополняете код, и решить методом конечных элементов",
+      "subjectId": "origin-subject-4",
+      "dueDate": null,
+      "attachments": [
+        {
+          "id": "origin-file-24",
+          "name": "tutorial_part1.pdf",
+          "url": "https://storage.yandexcloud.net/student2/mvt25/materials/origin-24.pdf",
+          "size": 602870
+        },
+        {
+          "id": "origin-file-25",
+          "name": "pract rabota 1.pdf",
+          "url": "https://storage.yandexcloud.net/student2/mvt25/materials/origin-25.pdf",
+          "size": 213335
+        }
+      ]
+    },
+    {
+      "id": "origin-assignment-12",
+      "title": "Задание 4. Transfinite",
+      "description": "Надо сделать структурированную сетку, через Recombine. Потом его в коде можно зациклить, чтобы получилось много ячеек",
+      "subjectId": "origin-subject-3",
+      "dueDate": null,
+      "attachments": [
+        {
+          "id": "origin-file-26",
+          "name": "Задание4_выч.pdf",
+          "url": "https://storage.yandexcloud.net/student2/mvt25/materials/origin-26.pdf",
+          "size": 209871
+        }
+      ]
+    },
+    {
+      "id": "origin-assignment-13",
+      "title": "Практическое задание №4. dolfin.MPI",
+      "description": "Решить через МКЭ (dolfin) уравнение Пуассона. Использовать mpi4py. https://mpi4py.readthedocs.io/en/stable/tutorial.html\nсделать на python\nИли используя это: https://fenics.readthedocs.io/projects/dolfin/en/2017.2.0/apis/api_common.html#mpi",
+      "subjectId": "origin-subject-1",
+      "dueDate": null,
+      "attachments": [
+        {
+          "id": "origin-file-27",
+          "name": "Практика4_паралл.pdf",
+          "url": "https://storage.yandexcloud.net/student2/mvt25/materials/origin-27.pdf",
+          "size": 326983
+        },
+        {
+          "id": "origin-description-link-9343e424f4e83878",
+          "name": "https://mpi4py.readthedocs.io/en/stable/tutorial.html",
+          "url": "https://mpi4py.readthedocs.io/en/stable/tutorial.html"
+        },
+        {
+          "id": "origin-description-link-f3a236071ac7fc35",
+          "name": "https://fenics.readthedocs.io/projects/dolfin/en/2017.2.0/apis/api_common.html#mpi",
+          "url": "https://fenics.readthedocs.io/projects/dolfin/en/2017.2.0/apis/api_common.html#mpi"
+        }
+      ]
+    },
+    {
+      "id": "origin-assignment-14",
+      "title": "Лаб 4. Уравнение теплопроводности (Кирпич, Пенопласт)",
+      "description": "",
+      "subjectId": "origin-subject-6",
+      "dueDate": null,
+      "attachments": [
+        {
+          "id": "origin-file-28",
+          "name": "photo_2026-10-24_11-27-10.jpg",
+          "url": "https://storage.yandexcloud.net/student2/mvt25/materials/origin-28.jpg",
+          "size": 71255
+        }
+      ]
+    },
+    {
+      "id": "origin-assignment-15",
+      "title": "Задание 5. Transfinite 3D",
+      "description": "",
+      "subjectId": "origin-subject-3",
+      "dueDate": null,
+      "attachments": [
+        {
+          "id": "origin-file-29",
+          "name": "Задание5_выч.pdf",
+          "url": "https://storage.yandexcloud.net/student2/mvt25/materials/origin-29.pdf",
+          "size": 86788
+        }
+      ]
+    },
+    {
+      "id": "origin-assignment-16",
+      "title": "Задание 3. Градиентный спуск",
+      "description": "В конце файла есть ряды Тейлора, выбираете один",
+      "subjectId": "origin-subject-2",
+      "dueDate": null,
+      "attachments": [
+        {
+          "id": "origin-file-30",
+          "name": "2_____(2).ipynb",
+          "url": "https://storage.yandexcloud.net/student2/mvt25/materials/origin-30.ipynb",
+          "size": 623367
+        },
+        {
+          "id": "origin-file-31",
+          "name": "Стохастический_градиентный_спуск(1).ipynb",
+          "url": "https://storage.yandexcloud.net/student2/mvt25/materials/origin-31.ipynb",
+          "size": 30405
+        }
+      ]
+    },
+    {
+      "id": "origin-assignment-17",
+      "title": "Лаб 3. Уравнение теплопроводности",
+      "description": "",
+      "subjectId": "origin-subject-6",
+      "dueDate": null,
+      "attachments": [
+        {
+          "id": "origin-file-32",
+          "name": "laba3.jpeg",
+          "url": "https://storage.yandexcloud.net/student2/mvt25/materials/origin-32.jpeg",
+          "size": 89802
+        }
+      ]
+    },
+    {
+      "id": "origin-assignment-18",
+      "title": "Лаб 5. Уравнение теплопроводности",
+      "description": "",
+      "subjectId": "origin-subject-6",
+      "dueDate": null,
+      "attachments": [
+        {
+          "id": "origin-file-33",
+          "name": "ae7192a4-dc53-49f8-83ad-7b80129cfcdf.jpeg",
+          "url": "https://storage.yandexcloud.net/student2/mvt25/materials/origin-33.jpeg",
+          "size": 944112
+        }
+      ]
+    },
+    {
+      "id": "origin-assignment-19",
+      "title": "Практика 2. Смешанная задача фильтрации",
+      "description": "В конце файла есть задание",
+      "subjectId": "origin-subject-4",
+      "dueDate": null,
+      "attachments": [
+        {
+          "id": "origin-file-34",
+          "name": "Pract 2.pdf",
+          "url": "https://storage.yandexcloud.net/student2/mvt25/materials/origin-34.pdf",
+          "size": 534737
+        }
+      ]
+    },
+    {
+      "id": "origin-assignment-20",
+      "title": "Практическая работа №5. dolfin.MPI/preconds & methods",
+      "description": "list_linear_solver_methods()\nlist_krylov_solver_preconditioners()\nможете посмотреть список предобуславливателей и методов в WSL",
+      "subjectId": "origin-subject-1",
+      "dueDate": null,
+      "attachments": [
+        {
+          "id": "origin-file-35",
+          "name": "Практика5.pdf",
+          "url": "https://storage.yandexcloud.net/student2/mvt25/materials/origin-35.pdf",
+          "size": 217456
+        }
+      ]
+    },
+    {
+      "id": "origin-assignment-21",
+      "title": "Задание 6. Выделение ячеек",
+      "description": "Через submesh делаете 2 раза",
+      "subjectId": "origin-subject-3",
+      "dueDate": null,
+      "attachments": [
+        {
+          "id": "origin-file-36",
+          "name": "Задание6_выч.pdf",
+          "url": "https://storage.yandexcloud.net/student2/mvt25/materials/origin-36.pdf",
+          "size": 460347
+        }
+      ]
+    },
+    {
+      "id": "origin-assignment-22",
+      "title": "Задание 1. Презентация",
+      "description": "Делаете презентацию по одной теме",
+      "subjectId": "origin-subject-5",
+      "dueDate": null,
+      "attachments": [
+        {
+          "id": "origin-file-37",
+          "name": "Темы СРС СОТ.docx",
+          "url": "https://storage.yandexcloud.net/student2/mvt25/materials/origin-37.docx",
+          "size": 18993
+        }
+      ]
+    }
+  ],
+  "semesters": [
+    {
+      "id": "origin-semester-1",
+      "number": 3,
+      "startDate": "2026-09-01",
+      "endDate": "2026-12-31"
+    }
+  ],
+  "groups": [
+    {
+      "id": "origin-group-1",
+      "name": "М-ВТ-25"
+    }
+  ]
+}
